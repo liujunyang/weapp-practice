@@ -92,6 +92,10 @@ setData 函数用于将数据从逻辑层发送到视图层，同时改变对应
 
 11.[wx:if](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/conditional.html) 是惰性的，如果在初始渲染条件为`false`，框架什么也不做，在条件第一次变成真的时候才开始局部渲染。
 
+12.pageScrollTo 的问题:页面滚动后又滚动回顶部。
+我也遇到类似的问题，解决了。我的需求是蒙层上有一些按钮，点击某个按钮后关闭蒙层，然后页面滚动到相应位置。
+我的解决方法是，关闭蒙层后，setTimeout 延迟滚动。
+
 ### 会话管理
 微信的网络请求接口 wx.request() 没有携带 Cookies，这让传统基于 Cookies 实现的会话管理不再适用。为了让处理微信小程序的服务能够识别会话，我们会话管理使用[weapp-session-client](https://github.com/CFETeam/weapp-session-client)。这需要服务端的支持。基本原理是包装wx.request并在 Header 上使用特殊的字段跟踪。
 
