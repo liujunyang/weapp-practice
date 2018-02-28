@@ -15,6 +15,17 @@
 
 我们雨课堂的愿景之一就是“更好用”。随着微信在小程序方面的持续发力，小程序能够提供的服务充满想象空间。
 
+### 小程序知识
+* [个人有哪些注册资格](https://github.com/liujunyang/weapp-practice/issues/2)
+* [什么是素材](https://github.com/liujunyang/weapp-practice/issues/1)
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
 
 ### 实践总结
 * [微信小程序实践](https://github.com/liujunyang/weapp-practice/issues/3)
